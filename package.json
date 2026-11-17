@@ -1,0 +1,17 @@
+{
+  "name": "pi-cpa-session-cache",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Project-scoped Pi session header for the paired CPA Antigravity plugin",
+  "license": "MIT",
+  "keywords": ["pi-package"],
+  "engines": { "node": ">=22.19.0" },
+  "pi": { "extensions": ["./src/index.ts"] },
+  "scripts": {
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": { "@earendil-works/pi-coding-agent": "*" },
+  "devDependencies": { "@types/node": "^24.0.0", "typescript": "^5.9.3" }
+}
